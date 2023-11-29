@@ -1,0 +1,39 @@
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Your contact information goes here -->
+                <p>Email: X00174339@mytudublin.ie</p>
+                <p>Phone: 0857072342</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+function countdownTimer() {
+    const difference = +new Date("2020-01-01") - +new Date();
+    let remaining = "Time's up!";
+
+    if (difference > 0) {
+        const parts = {
+            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            minutes: Math.floor((difference / 1000 / 60) % 60),
+            seconds: Math.floor((difference / 1000) % 60),
+        };
+        remaining = Object.keys(parts).map(part => {
+            return `${parts[part]} ${part}`;
+        }).join(" ");
+    }
+
+    document.getElementById("countdown").innerHTML = remaining;
+}
