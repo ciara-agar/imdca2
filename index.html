@@ -11,9 +11,11 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><h2>My Portfolio Website</h2></a>
+            <a class="navbar-brand font-weight-bold" href="#">
+                <h2>My Portfolio Website</h2>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,41 +23,60 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary mx-2" href="#">Home</a>
+                        <a class="nav-link btn btn-outline-primary mx-2 font-weight-bold" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary mx-2" href="projectdetails.html">Project Details</a>
+                        <a class="nav-link btn btn-outline-primary mx-2 font-weight-bold"
+                            href="projectdetails.html">Project Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary mx-2 font-weight-bold" href="findme.html">Where To
+                            Find Me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <!-- Hero Section -->
-        <section class="jumbotron text-center">
+    <!-- Hero Section -->
+    <div class="conatiner">
+        <section class="jumbotron text-center "
+            style="width: 100%; height: 640px; margin: auto; float:left; background-color: rgb(130, 130, 130);">
             <div class="container">
                 <img src="images/IMG_1571.JPG" class="img-fluid rounded-circle mb-3" alt="Your Photo"
-                    style="width: 200px;">
-                <h1 class="display-4">Ciara Agar</h1>
-                <p class="lead">Software Development Student</p>
-                <p class="lead">I am a fourth year student in Tud Tallaght. I am also working part time in HM Kids
-                    Dundrum.
-                </p>
-                <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#contactModal">
-                    Contact Me
-                </button>
+                    style="width: 400px; height: 450px; float: left;">
+                <div>
+                    <div class="container text-center mt-4">
+                        <h1 class="display-4 ">Ciara Agar</h1>
+                        <p class="lead">Software Development Student</p>
+                        <p class="lead">I am a fourth year student in Tud Tallaght. I am also working part time in HM
+                            Kids
+                            Dundrum.
+                        </p>
+                        <button type="button" class="btn btn-outline-primary mt-3 text-light bg-dark"
+                            data-toggle="modal" data-target="#contactModal">
+                            Contact Me
+                        </button>
+                    </div>
+                </div>
             </div>
-        </section>
+    </div>
+    </div>
+    </section>
+    </div>
 
+    <div class="container mt-4 bg-light "></div>
+    <div class="container">
         <div class="container mt-4">
             <!-- Education Section -->
-            <section class="mt-4">
-                <div class="card">
+            <section class="mt-4 text-center font-weight-bold" style="width: 100%; float: right; margin:auto;">
+                <div class="card bg-dark text-light">
                     <div class="card-header" id="educationHeading">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse"
-                                data-target="#educationSection" aria-expanded="false" aria-controls="educationSection">
+                            <button id="buttontitle"
+                                class="btn btn-outline-secondary btn-link text-light font-weight-bold" type="button"
+                                data-toggle="collapse" data-target="#educationSection" aria-expanded="false"
+                                aria-controls="educationSection">
                                 Education
                             </button>
                         </h2>
@@ -66,13 +87,13 @@
                             in TUD Tallaght. Below are my grades for my four years of study.
                         </p>
                         <!-- Year 4 -->
-                        <div class="card">
+                        <div class="card text-dark">
                             <div class="card-header">
                                 <h3>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseYear4" aria-expanded="false"
+                                    <button class="btn btn-link text-dark font-weight-bold" type="button"
+                                        data-toggle="collapse" data-target="#collapseYear4" aria-expanded="false"
                                         aria-controls="collapseYear4">
-                                        Year 4
+                                        <h3>Year 4</h3>
                                     </button>
                                 </h3>
                             </div>
@@ -162,10 +183,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
                                             data-target="#collapseYear3" aria-expanded="false"
                                             aria-controls="collapseYear3">
-                                            Year 3
+                                            <h3>Year 3</h3>
                                         </button>
                                     </h3>
                                 </div>
@@ -233,10 +254,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
                                             data-target="#collapseYear2" aria-expanded="false"
                                             aria-controls="collapseYear2">
-                                            Year 2
+                                            <h3>Year 2</h3>
                                         </button>
                                     </h3>
                                 </div>
@@ -334,10 +355,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
                                             data-target="#collapseYear1" aria-expanded="false"
                                             aria-controls="collapseYear1">
-                                            Year 1
+                                            <h3>Year 1</h3>
                                         </button>
                                     </h3>
                                 </div>
@@ -433,12 +454,14 @@
             </section>
 
             <!-- Projects Section -->
-            <section class="mt-4">
-                <div class="card">
-                    <div class="card-header" id="educationHeading">
+            <section class="mt-4 text-center font-weight-bold" style="width: 100%; float: right; margin:auto;">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="projectHeading">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse"
-                                data-target="#projectsSection" aria-expanded="false" aria-controls="projectsSection">
+                            <button id="buttontitle"
+                                class="btn btn-outline-secondary btn-link text-light font-weight-bold" type="button"
+                                data-toggle="collapse" data-target="#projectsSection" aria-expanded="false"
+                                aria-controls="projectsSection">
                                 Projects
                             </button>
                         </h2>
@@ -448,13 +471,13 @@
                         <p>I have undergone some projects throughout my studies and internship. Below are the details of
                             my key projects.</p>
                         <!-- Year 4 -->
-                        <div class="card">
+                        <div class="card text-dark">
                             <div class="card-header">
                                 <h3>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
                                         data-target="#collapseprojectYear4" aria-expanded="false"
                                         aria-controls="collapseprojectYear4">
-                                        Year 4 Project
+                                        <h3>Year 4 Project</h3>
                                     </button>
                                 </h3>
                             </div>
@@ -463,7 +486,7 @@
                                     <!-- Year 4 Project -->
                                     <div class="mt-3">
                                         <h4>Project Year 4</h4>
-                                        <p>Overview of Project</p>
+                                        <h5>Overview of Project</h5>
                                         <p>I am currently building an accessible Angular website based on dogs that are
                                             misbehaving.
                                             This project is in the works so I will update this section accordingly.
@@ -475,10 +498,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
                                             data-target="#collapsewomensAid" aria-expanded="false"
                                             aria-controls="collapsewomensAid">
-                                            Womens Aid Project
+                                            <h3>Women's Aid Project</h3>
                                         </button>
                                     </h3>
                                 </div>
@@ -487,7 +510,7 @@
                                         <!-- Womens Aid Project-->
                                         <div>
                                             <h4>Womens Aid Project</h4>
-                                            <p>Overview of Project</p>
+                                            <h5>Overview of Project</h5>
                                             <a href="https://www.womensaid.ie/">Women's Aid Website</a>
                                             <p>I underwent this project during my internship with Fidelity Ireland.
                                                 Fidelity encourage working with charities in the community. As part of
@@ -515,10 +538,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
                                             data-target="#collapseprojYear2" aria-expanded="false"
                                             aria-controls="collapseprojYear2">
-                                            Second Year Project
+                                            <h3>Second Year Project</h3>
                                         </button>
                                     </h3>
                                 </div>
@@ -527,7 +550,7 @@
                                         <!-- Second Year Project -->
                                         <div>
                                             <h4>Second Year Project</h4>
-                                            <p>Project Overview</p>
+                                            <h5>Project Overview</h5>
                                             <p>This project was built using angular. It was an e-commerce website.
                                                 The wesbite utilized Stripe payments so that users could carry out
                                                 purchases. This was
@@ -556,113 +579,207 @@
             </section>
 
             <!-- Work Placement Section -->
-            <section class="mt-4">
-                <div class="card">
-                    <div class="card-header" id="educationHeading">
+            <section class="mt-4 text-center font-weight-bold " style="width: 100%; margin:auto; float: right;">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="workplacementHeading">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#wpSection"
-                                aria-expanded="false" aria-controls="projectsSection">
+                            <button id="buttontitle"
+                                class="btn btn-outline-secondary btn-link text-light font-weight-bold" type="button"
+                                data-toggle="collapse" data-target="#wpSection" aria-expanded="false"
+                                aria-controls="projectsSection">
                                 Work Placement
                             </button>
                         </h2>
                     </div>
-                    <div id="wpSection" class="collapse">
-                        <!-- Work Placement content goes here -->
-                        <p>Work Placement details</p>
-                        <p>
-                            I completed my workplace at Fidelity Ireland. My placement was 9 months long. I was one of
-                            50 interns. I was on a team
-                            called Home Improvement during my time at Fidelity. It was a cross functional team. My role
-                            was software engineering but I also
-                            undertook business analysis challenges and quality assurance testing. During my time there I
-                            felt that I had really become
-                            part of the team and was sad to leave. I was tasked with creating and implementing a
-                            rulebook for working with other teams. My team
-                            owned multiple sites and new work was difficult to carry out within time constraints and so
-                            if other teams had ideas to add to the sites,
-                            my team would then allow the other team to carry out work on our sites under supervisison. I
-                            also immersed myself in the Fidelity
-                            community and joined the sports and social club. I went on many outings with the club such
-                            as kayaking and golfing. I also made friends for
-                            life in the other interns thanks to having intern days to allow us to socialise and work
-                            together.
-                        </p>
-                        <img src="images/interns.png" alt="interns" class="picswithin" style="width: 450px;" ,
-                            height="290px">
-                        <img src="images/kayak.png" alt="kayaking girls" class="picswithin">
+                    <div id="wpSection" class="collapse text-light">
+                        <div class="card text-dark">
+                            <!-- Work Placement here -->
+                            <div class="card-header">
+                                <h3>Work Placement details</h3>
+                            </div>
+                            <p>
+                                I completed my workplace at Fidelity Ireland. My placement was 9 months long. I was one
+                                of
+                                50 interns. I was on a team
+                                called Home Improvement during my time at Fidelity. It was a cross functional team. My
+                                role
+                                was software engineering but I also
+                                undertook business analysis challenges and quality assurance testing. During my time
+                                there I
+                                felt that I had really become
+                                part of the team and was sad to leave. I was tasked with creating and implementing a
+                                rulebook for working with other teams. My team
+                                owned multiple sites and new work was difficult to carry out within time constraints and
+                                so
+                                if other teams had ideas to add to the sites,
+                                my team would then allow the other team to carry out work on our sites under
+                                supervisison. I
+                                also immersed myself in the Fidelity
+                                community and joined the sports and social club. I went on many outings with the club
+                                such
+                                as kayaking and golfing. I also made friends for
+                                life in the other interns thanks to having intern days to allow us to socialise and work
+                                together.
+                            </p>
+                            <img src="images/interns.png" alt="interns" class="picswithin">
+                            <img src="images/kayak.png" alt="kayaking girls" class="picswithin">
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Work I'm Interested In Section -->
-            <section class="mt-4">
-                <div class="card">
-                    <div class="card-header" id="educationHeading">
+            <section class="mt-4 text-center font-weight-bold" style="width: 100%; margin:auto; float: right;">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="workinterestHeading">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#wiSection"
-                                aria-expanded="false" aria-controls="projectsSection">
+                            <button id="buttontitle"
+                                class="btn btn-outline-secondary btn-link text-light font-weight-bold" type="button"
+                                data-toggle="collapse" data-target="#wiSection" aria-expanded="false"
+                                aria-controls="projectsSection">
                                 Work I'm Interested In
                             </button>
                         </h2>
                     </div>
-                    <div id="wiSection" class="collapse">
-                        <!-- Work Interests content goes here -->
-                        <p>Fidelity bla bla bla.</p>
-                    </div>
-                </div>
-                <div id="countdown"></div>
-                <script> //will fix this
-                    function countdownTimer() {
-                        const difference = +new Date("2020-01-01") - +new Date();
-                        let remaining = "Time's up!";
-                    }
-                    countDownTimer();
-                    setInterval(countdownTimer, 1000);
-                </script>
-            </section>
+                    <div id="wiSection" class="collapse text-light">
+                        <div class="card text-dark">
+                            <!-- Work Interests section -->
+                            <div class="card-header">
+                                <h3>Fidelity Ireland Graduate Role</h3>
+                            </div>
+                            <p>My main focus in the near future in regarding to my career is the Fidelity graduate role.
+                                I
+                                have already
+                                recieved a place in this programme. It is a four month programme which teaches graduates
+                                all
+                                that they will
+                                need to know as junior software engineers in the company. After the four months you are
+                                then
+                                placed on
+                                a team based on your strong points that you have demonstrated in the four month
+                                programme. I
+                                am particularly
+                                interested in front end work but enjoy full stack software engineering. Ideally I would
+                                placed either back
+                                on my original internship team or on a team within the same division in the company.
+                            </p>
+                            <img src="images/Fidelity-building.jpg" class="picswithin" alt="Fidelity Grounds">
 
-            <!-- Hobbies/Interests Section -->
-            <section class="mt-4">
-                <div class="card">
-                    <div class="card-header" id="educationHeading">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#hiSection"
-                                aria-expanded="false" aria-controls="projectsSection">
-                                Hobbies/Interests
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="hiSection" class="collapse">
-                        <!-- Hobbies/Interests content goes here -->
-                        <div class="card-body">
-                            <div class="mt-3">
-                                <h4>Gym</h4>
-                                <p>I am an avid gym goer. I believe there is many benifits to the gym. It can help both
-                                    physical and mental health. It can also help to mantain a healthy diet as you have
-                                    to
-                                    focus on what you are eating to achieve the results wanted. My gym has a women's
-                                    only
-                                    room which I think is a great idea as sometimes women can feel intimidated in the
-                                    gym.
-                                    It is a great place to build up confidence while starting off.
-                                </p>
-                                <img src="images/planethealth.jpg" class="picswithin" alt="Gym Picture"
-                                    style="width: 200px;">
+                        </div>
+
+                        <div class="card text-dark">
+                            <div class="card-header" id="timerHeading"></div>
+                            <h3>Timer until I go back to Fidelity</h3>
+                            <p id="demo"></p>
+
+                            <script>
+                                // Set the date we're counting down to
+                                var countDownDate = new Date("Aug 18, 2024 09:00:00").getTime();
+
+                                // Update the count down every 1 second
+                                var x = setInterval(function () {
+
+                                    // Get today's date and time
+                                    var now = new Date().getTime();
+
+                                    // Find the distance between now and the count down date
+                                    var distance = countDownDate - now;
+
+                                    // Time calculations for days, hours, minutes and seconds
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                    // Output the result in an element with id="demo"
+                                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                                        + minutes + "m " + seconds + "s ";
+
+                                    // If the count down is over, write some text 
+                                    if (distance < 0) {
+                                        clearInterval(x);
+                                        document.getElementById("demo").innerHTML = "EXPIRED";
+                                    }
+                                }, 1000);
+                            </script>
+                        </div>
+                        <div class="card text-dark">
+                            <div class="card-header">
+                                <h3>Where am I based?</h3>
                             </div>
-                            <div class="mt-3">
-                                <h4>Fashion</h4>
-                                <p>bla bla bla</p>
-                            </div>
-                            <div class="mt-3">
-                                <h4>My dog</h4>
-                                <p>bla bla bla</p>
-                            </div>
+                            <iframe title="map" height="450" style="border:0" loading="lazy" allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAzQCpcu7EReddd6c72wC_a_XGjv9ubuqQ&q=Clondalkin+IE">
+                            </iframe>
                         </div>
                     </div>
                 </div>
         </div>
         </section>
+
+        <!-- Hobbies/Interests Section -->
+        <section class="mt-4 text-center" style="width: 100%; margin:auto; float: right; ">
+            <div class="card bg-dark text-light">
+                <div class="card-header" id="hobbiesHeading">
+                    <h2 class="mb-0">
+                        <button id="buttontitle" class="btn btn-outline-secondary btn-link text-light font-weight-bold"
+                            type="button" data-toggle="collapse" data-target="#hiSection" aria-expanded="false"
+                            aria-controls="projectsSection">
+                            Hobbies/Interests
+                        </button>
+                    </h2>
+                </div>
+                <div id="hiSection" class="collapse text-light" aria-labelledby="headingHobbiesInterests">
+                    <!-- Hobbies/Interests here -->
+                    <div class="card text-dark">
+                        <div class="card-header">
+                            <h3>My Hobbies/Interests</h3>
+                        </div>
+                        <div class="mt-3">
+                            <h4>Gym</h4>
+                            <p>I am an avid gym goer. I believe there is many benifits to the gym. It can help both
+                                physical and mental health. It can also help to mantain a healthy diet as you have
+                                to
+                                focus on what you are eating to achieve the results wanted. My gym has a women's
+                                only
+                                room which I think is a great idea as sometimes women can feel intimidated in the
+                                gym.
+                                It is a great place to build up confidence while starting off.
+                            </p>
+                            <img src="images/planethealth.jpg" class="picswithin" alt="Gym Picture"
+                                style="width: 200px;">
+                        </div>
+                        <div class="mt-3">
+                            <h4>Fashion and Makeup</h4>
+                            <p>I am also interested in fashion and makeup. I like to keep up with the latest trends
+                                and like adapting new trends to suit my own style. I use Instagram and Pinterest
+                                mainly. I like to upcycle clothes also which is a good way to keep up with trends
+                                without having to make new purchases.
+                                I follow a lot of personal stylists and fashion brands. On Youtube I watch a lot of
+                                makeup content as makeup trends are forever evolving and new products are always being
+                                released.
+                            </p>
+                            <img src="images/pinterest.png" class="picswithin" alt="Pinterest Homepage"
+                                style="width: 200px;">
+                        </div>
+                        <div class="mt-3">
+                            <h4>My dog</h4>
+                            <p>I have a three year old yorkshire terrier named Ricky. I got him during the first
+                                lockdown.
+                                I like to bring Ricky to the beach when the weather is suitable and sometimes out on
+                                drives
+                                with me. Ricky hates the rain and is very much a home bird. He is like a little baby and
+                                is
+                                treated like so. He is like my shadow and I spend as much time as I can with him.
+                            </p>
+                            <img src="images/Ricky.JPEG" class="picswithin" alt="Ricky(Dog)" style="width: 200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
+    </section>
+
+
     <!-- Contact Modal -->
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
         aria-hidden="true">
@@ -681,31 +798,9 @@
             </div>
         </div>
     </div>
-    <!-- Footer Section -->
-    <footer class="bg-dark text-light text-center py-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="https://www.facebook.com/" target="_blank"
-                        aria-label="open ciara's facebook in new window">
-                        <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook">
-                    </a>
-                    <a href="https://twitter.com/?lang=en-ie" target="_blank"
-                        aria-label="open ciara's twitter in new window">
-                        <img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter">
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank"
-                        aria-label="open ciara's instagram in new window">
-                        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.linkedin.com/in/ciara-agar/" target="_blank"
-                        aria-label="open ciara's linked in in new window">
-                        <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+    </div>
+    </div>
 
     <!-- Bootstrap JavaScript (jQuery is required) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
+
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><h2>My Portfolio Website</h2></a>
+            <a class="navbar-brand font-weight-bold" href="index.html">
+                <h2>My Portfolio Website</h2>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,10 +23,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary mx-2" href="index.html">Home</a>
+                        <a class="nav-link btn btn-outline-primary mx-2 font-weight-bold" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary mx-2" href="#">Project Details</a>
+                        <a class="nav-link btn btn-outline-primary mx-2 font-weight-bold"
+                            href="#">Project Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary mx-2 font-weight-bold" href="findme.html">Where To Find Me</a>
                     </li>
                 </ul>
             </div>
@@ -35,12 +43,12 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Bootstrap Features</h5>
-                        <p class="card-text">Explore the amazing features of Bootstrap!</p>
+                        <p class="card-text">My Bootsrap Features</p>
                         <ul>
                             <li>Responsive design</li>
-                            <li>Grid system</li>
-                            <li>Component library</li>
-                            <!-- Add more Bootstrap features here -->
+                            <li>Cards</li>
+                            <li>Table</li>
+                            <li>Modal</li>
                         </ul>
                     </div>
                 </div>
@@ -50,9 +58,10 @@
             <div class="col-md-6 mt-4 mt-md-0">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Useful URL</h5>
-                        <p class="card-text">Visit this link for more information.</p>
-                        <a href="https://www.example.com" class="btn btn-primary" target="_blank">Go to Website</a>
+                        <h5 class="card-title">Hosted portfolio website</h5>
+                        <p class="card-text">Visit this link to access hosted website.</p>
+                        <a href="https://ciara-agar.github.io/imdca2/" class="btn btn-outline-primary mt-3 text-light bg-dark" target="_blank"
+                            aria-label="open link in new window">Go to hosted site</a>
                     </div>
                 </div>
             </div>
@@ -64,4 +73,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
